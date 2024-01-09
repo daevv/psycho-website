@@ -1,0 +1,140 @@
+.main-section {
+  display: flex;
+  column-gap: 2rem;
+  justify-content: space-between;
+  position: relative;
+}
+
+.main-section__bg {
+  background-color: #ffffff;
+  height: 700px;
+  width: 1000px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.content-container {
+  display: flex;
+  column-gap: 2rem;
+}
+
+.main-img {
+  background-image: url('../../Assets/main-photo.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 458px;
+  height: 504px;
+  border-radius: 0 0 0 150px;
+}
+
+.name {
+  font-size: 12px;
+  font-family: 'Jost',Arial,sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.main-section__info {
+  /* background-color:lavenderblush; */
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.25rem;
+  max-width: 600px;
+  margin-top: 60px;
+}
+
+.about-info {
+  font-size: 16px;
+  font-family: 'Jost',Arial,sans-serif;
+  font-weight: 400;
+  margin-left: 5rem;
+  max-width: 400px;
+}
+
+.title {
+  font-size: 70px;
+  line-height: 74px;
+}
+
+.signup-button {
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 12px;
+  font-family: "Jost", Arial, sans-serif;
+  line-height: 1.55;
+  font-weight: 400;
+  letter-spacing: 2px;
+  border-width: 1px;
+  border-radius: 30px;
+  background-color: #375438;
+  width: 146px;
+  height: 44px;
+  transition: 0.5s;
+}
+
+.ml {
+  margin-left: 5rem;
+}
+
+.signup-button:hover {
+  background-color: #1c2a1c;
+}
+
+
+/* requests-section */
+
+.requests-section {
+  display: flex;
+  column-gap: 2rem;
+}
+
+.requests-section__info {
+  padding-top: 100px;
+}
+
+.lists-container {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 1rem;
+}
+
+.title {
+  margin-bottom: 2rem;
+}
+
+.main-img__requests {
+  width: 600px;
+
+}
+
+/* services-section */
+
+.services-section {
+  background-color: #ffffff;
+  height: 35rem;
+}
+
+.services-section__paragraph {
+  color: #000000;
+  font-size: 22px;
+  font-family: 'Jost',Arial,sans-serif;
+  line-height: 34px;
+  font-weight: 400;
+  max-width: 400px;
+  margin-bottom: 40px;
+}
+
+/* signup-section */
+
+.signup-section {
+  background-color: #ffffff;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
