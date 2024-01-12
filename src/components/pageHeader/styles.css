@@ -1,0 +1,35 @@
+
+.content-box {
+  margin-bottom: 5rem;
+}
+.main-section {
+  display: flex;
+  column-gap: 2rem;
+  justify-content: space-between;
+  position: relative;
+}
+
+.main-section__bg {
+  background-color: #ffffff;
+  height: 700px;
+  width: 1000px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.content-container {
+  display: flex;
+  column-gap: 2rem;
+}
+
+.main-section__info {
+  /* background-color:lavenderblush; */
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.25rem;
+  max-width: 600px;
+  margin-top: 60px;
+}

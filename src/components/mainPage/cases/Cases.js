@@ -44,17 +44,17 @@ const Case = ({caseInfo}) => {
       <div className="case-card__text-block">
         <p className="block-title">ЗАПРОС</p>
         <hr className='splitter' />
-        <p className="text">{request}</p>
+        <p className="paragraph">{request}</p>
       </div>
       <div className="case-card__text-block">
         <p className="block-title">ПРОЦЕСС</p>
         <hr className='splitter' />
-        <p className="text">{process}</p>
+        <p className="paragraph">{process}</p>
       </div>
       <div className="case-card__text-block">
         <p className="block-title">РЕЗУЛЬТАТ</p>
         <hr className='splitter' />
-        <p className="text">{result}</p>
+        <p className="paragraph">{result}</p>
       </div>
     </div>
   );

@@ -1,0 +1,27 @@
+.toggle-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.5rem;
+}
+
+.block-chooser {
+  display: flex;
+}
+
+.block-info {
+  display: flex;
+  column-gap: 2.5rem;
+}
+
+.block-chooser__btn {
+  flex-grow: 1;
+  padding: 15px;
+  border-bottom: 1px solid #4d724e61;
+}
+
+.selected {
+  border-bottom: 1px solid #375438;
+}
+.info-container {
+  flex: 1 1 0px;
+}

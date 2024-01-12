@@ -22,14 +22,6 @@
   text-transform: uppercase;
 }
 
-.text {
-  color: #000000;
-  font-size: 16px;
-  font-family: "Jost", Arial, sans-serif;
-  line-height: 25px;
-  font-weight: 400;
-}
-
 .case-card__title-container {
   display: flex;
   align-items: center;

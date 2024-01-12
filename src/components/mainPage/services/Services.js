@@ -1,5 +1,7 @@
 import { useState } from "react";
 import './styles.css'
+import SignUpButton from "../../signUpButton/SignUpButton";
+import Modal from "../../modal/Modal";
 
 const SERVICES_LIST = [
   {
@@ -39,7 +41,9 @@ const ServiceBlock = ({blockInfo}) => {
   const [isHovered, setIsHovered] = useState(false);
   const handleMouseEnter = () => { setIsHovered(true) };
   const handleMouseLeave = () => { setIsHovered(false) };
-  const handleSignUp = () => {console.log('signed up')};
+
+  const [modalActive, setModalActive] = useState(false);
+  const handleClick = () => setModalActive(!modalActive);
   return !isHovered ? (
     <div className="card" onMouseEnter={handleMouseEnter} >
       <p className="card__title">{serviceName}</p>
@@ -48,12 +52,15 @@ const ServiceBlock = ({blockInfo}) => {
     </div>
   ) : (
     <div className="card__selected card" onMouseLeave={handleMouseLeave} >
+      <Modal isActive={modalActive} setIsActive={setModalActive}>
+        <p className="subtitle">i am modal</p>
+      </Modal>
       <p className="card__title">{serviceName}</p>
 
       <p className="card__info">{additionalInfo}</p>
       <p className="card__price">{`${price} рублей`}</p>
       <p className="card__price">{duration}</p>
-      <button className='signup-button' nClick={handleSignUp}>Записаться</button>
+      <SignUpButton handleClick={handleClick}/>
     </div>
   );
 }

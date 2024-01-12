@@ -1,0 +1,28 @@
+.main-img__personality {
+  flex-grow: 1;
+  flex-shrink: 0;
+  border-radius: 0 0 150px 0;
+  height: 600px;
+  background-image: url(../../Assets/about-photo.jpeg);
+  background-size: cover;
+}
+
+.personality-section__info {
+  flex-grow: 1;
+  flex-shrink: 3;
+}
+
+.add-info {
+  display: flex;
+  justify-content: space-around;
+}
+
+.parapraph--emphasised {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.paragraph-title {
+  margin-bottom: 1rem;
+}

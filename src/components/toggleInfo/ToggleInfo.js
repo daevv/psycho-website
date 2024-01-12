@@ -1,4 +1,5 @@
 import { useState } from "react";
+import './styles.css';
 
 const SECTIONS_INFO = [
   {
@@ -27,10 +28,10 @@ const InfoSection = ({info}) => {
   const {title, paragraph} = info;
   return (
     <div className="info-container">
-      <p className="info-container__title">
+      <p className="subtitle">
         {title}
       </p>
-      <p className="info-container__paragraph">
+      <p className="paragraph">
         {paragraph}
       </p>
     </div>
@@ -49,8 +50,8 @@ const ToggleInfo = () => {
   return ( 
     <div className="toggle-container">
       <div className="block-chooser">
-        <button className="block-chooser__btn" onClick={handleFirstToggler}>Первая сессия</button>
-        <button className="block-chooser__btn" onClick={handleSecondToggler}>Последующие сессии</button>
+        <button className={`${pageNumber === 0 && 'selected'} block-chooser__btn`} onClick={handleFirstToggler}>Первая сессия</button>
+        <button className={`${pageNumber === 1 && 'selected'} block-chooser__btn`} onClick={handleSecondToggler}>Последующие сессии</button>
       </div>
       <div className="block-info">
         <InfoSection info={SECTIONS_INFO[pageNumber].first} />

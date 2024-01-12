@@ -4,15 +4,7 @@
   row-gap: 0.8rem;
 }
 
-.options-list__item {
-  text-align: left;
-  font-size: 22px;
-  font-family: 'Jost',Arial,sans-serif;
-  line-height: 34px;
-  font-weight: 400;
-}
-
-.options-list__item::before {
+.options-list li::before {
   content: "";
   height: 10px;
   width: 10px;

@@ -1,20 +1,25 @@
-import { Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import './reset.css';
 import Footer from './components/footer/Footer';
 import Header from './components/header/Header';
 
 import MainPage from './pages/mainPage/MainPage';
-import AboutPage from './pages/AboutPage';
+import AboutPage from './pages/aboutPage/AboutPage';
 import ConsultationPage from './pages/ConsultationPage';
 import BooksPage from './pages/BooksPage';
 import CardsPage from './pages/CardsPage';
-import ContactsPage from './pages/ContactsPage';
+import ContactsPage from './pages/contactsPage/ContactsPage';
+import Modal from './components/modal/Modal';
+import { useState } from 'react';
 
 function App() {
+
+  // const [modalActive, setModalActive] = useState(true);
   return (
     <div className="App">
         <Header />
+        {/* <Modal isActive={modalActive} setIsActive={setModalActive}/> */}
         <Routes>
           <Route path="/" element={<MainPage/> } />
           <Route path="/about" element={<AboutPage />} />

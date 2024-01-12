@@ -43,7 +43,7 @@ const SignUpForm = () => {
             placeholder="Email"
           />
         </div>
-        <div>
+        {/* <div>
           <input
             type="radio"
             value="male"
@@ -56,7 +56,7 @@ const SignUpForm = () => {
             name="gender"
           />
           Female
-        </div>
+        </div> */}
         <button className="signup-button">Записаться</button>
       </form>
       <div className="main-img"></div>
