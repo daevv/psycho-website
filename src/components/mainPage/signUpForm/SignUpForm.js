@@ -34,10 +34,11 @@ const SignUpForm = () => {
           <label className="label" htmlFor="request">
             Опишите свой запрос в нескольких словах
           </label>
-          <input
-            className="input-field"
+          <textarea
+            className="input-field textarea"
             type="text"
             id="request"
+            rows={3}
             placeholder="Опишите свой запрос в нескольких словах"
             autocomplete="off"
           />
@@ -64,7 +65,6 @@ const SignUpForm = () => {
             type="email"
             id="email"
             placeholder="Email"
-            required
             autocomplete="off"
           />
         </div>
@@ -96,7 +96,7 @@ const SignUpForm = () => {
         )}
         <button className="signup-button">Записаться</button>
       </form>
-      <div className="main-img"></div>
+      <div className="main-img__form main-img"></div>
     </div>
   );
 };

@@ -25,6 +25,7 @@ const MainPage = () => {
                 <ParamsList params={REQUESTS_FIRST} />
                 <ParamsList params={REQUESTS_SECOND} />
               </div>
+              <div className="main-img__requests--mobile main-img__requests main-img"></div>
             </div>
           </div>
         </div>

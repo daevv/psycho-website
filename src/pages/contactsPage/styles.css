@@ -38,7 +38,7 @@
 }
 
 .mb {
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
 .contacts-logo--mail {
@@ -50,4 +50,11 @@
 }
 .contacts-logo--tg {
   background-image: url('../../Assets/socials-icons/tg-icon.svg');
+}
+
+@media (max-width: 880px) {
+  .contacts-list {
+    flex-direction: column;
+    align-items:flex-start;
+  }
 }

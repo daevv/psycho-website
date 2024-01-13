@@ -22,8 +22,27 @@
   color: #000;
 }
 
-@media (max-width: 480px) {
-  .nav {
-    display: none;
+@media (max-width: 780px) {
+  .nav-list {
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: -1000px;
+    background-color: beige;
+    height: 100vh;
+    width: 60%;
+    padding: 30px;
+    row-gap: 1rem;
+    padding-top: 40px;
+    transition: 0.7s ease-in-out;
+    -moz-box-shadow: 0 0 3px #ccc;
+    -webkit-box-shadow: 0 0 3px #ccc;
+    box-shadow: 0 0 3px #ccc;
+  }
+  .nav-item {
+    font-size: 16px;
+  }
+  .active {
+    right: 0;
   }
 }

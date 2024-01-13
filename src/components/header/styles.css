@@ -23,3 +23,25 @@
   height: 40px;
   width: 200px;
 }
+
+.show-menu-button {
+  background-image: url('../../Assets/nav-icons/burger-menu-svgrepo-com.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 40px;
+  width: 40px;
+  transition: 0.3s;
+  z-index: 1;
+  display: none;
+}
+
+.show-menu-button.active {
+  background-image: url('../../Assets/nav-icons/burger-menu-right-svgrepo-com.svg');
+}
+
+@media (max-width: 780px) {
+  .show-menu-button {
+    display: block;
+  }
+}

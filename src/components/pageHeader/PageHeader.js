@@ -12,7 +12,7 @@ const PageHeader = () => {
 
       <div className="main-section">
         <div className="container">
-          <div className="content-container">
+          <div className="content-container__header content-container">
             <div className="main-section__info">
               <h2 className="name">личный психолог Марина Скирко</h2>
               <h1 className="title">КОНСУЛЬТАЦИИ ПСИХОЛОГА ОНЛАЙН</h1>

@@ -20,11 +20,32 @@
   font-family: 'Jost',Arial,sans-serif;
 }
 
+.textarea {
+  resize: none;
+  width: 100% !important;
+}
+
 .label {
   display: none;
 }
 
 .loading-spinner {
   margin: 0 auto;
+}
+
+.main-img__form {
+  background-image: url('../../../Assets/photos/photo-1.jpg');
+  background-size: cover;
+  width: 70%;
+  display: block;
+}
+
+@media (max-width: 1000px) {
+  .main-img__form {
+    display: none;
+  }
+  .form-container{
+    background: none;
+  }
 }
 

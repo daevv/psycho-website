@@ -25,3 +25,15 @@
 .info-container {
   flex: 1 1 0px;
 }
+
+@media (max-width: 720px) {
+  .block-info {
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+}
+@media (max-width: 400px) {
+  .block-chooser {
+    flex-direction: column;
+  }
+}

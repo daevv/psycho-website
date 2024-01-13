@@ -11,7 +11,7 @@ const Footer = () => {
     <div className="footer">
       <div className="container">
         <div className="footer-container">
-          <Link to="/">
+          <Link to="/" onClick={scrollTop}>
             <div className="logo" />
           </Link>
           <div className="line">

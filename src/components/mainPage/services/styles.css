@@ -22,10 +22,24 @@
   text-align: center;
 }
 
+.card__mobile {
+  border-radius: 25px;
+  padding: 15px;
+  -moz-box-shadow: 0 0 3px #ccc;
+  -webkit-box-shadow: 0 0 3px #ccc;
+  box-shadow: 0 0 3px #ccc;
+}
+
 @media (max-width: 720px) {
   .services {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
+  }
+}
+
+@media (max-width: 500px) {
+  .services {
+    row-gap: 2rem;
   }
 }
