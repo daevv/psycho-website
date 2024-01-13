@@ -1,6 +1,6 @@
 
 .main-img {
-  background-image: url('../../Assets/main-photo.jpg');
+  background-image: url('../../Assets/photos/photo-5.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -67,4 +67,23 @@
 
 .mb-0 {
   margin-bottom: 0;
+}
+
+
+@media (max-width: 1000px) {
+  .main-img {
+    display: none;
+  }
+  .requests-section__info {
+    padding-top: 0;
+  }
+}
+@media (max-width: 480px) {
+  .main-img {
+    width: 300px;
+  }
+  .lists-container {
+    flex-direction: column;
+    row-gap: 1rem;
+  }
 }

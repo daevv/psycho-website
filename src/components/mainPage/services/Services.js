@@ -52,9 +52,8 @@ const ServiceBlock = ({blockInfo}) => {
     </div>
   ) : (
     <div className="card__selected card" onMouseLeave={handleMouseLeave} >
-      <Modal isActive={modalActive} setIsActive={setModalActive}>
-        <p className="subtitle">i am modal</p>
-      </Modal>
+      <Modal isActive={modalActive} setIsActive={setModalActive} />
+
       <p className="card__title">{serviceName}</p>
 
       <p className="card__info">{additionalInfo}</p>

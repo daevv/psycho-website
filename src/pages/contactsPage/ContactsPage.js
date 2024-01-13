@@ -2,6 +2,8 @@ import SignUpForm from "../../components/mainPage/signUpForm/SignUpForm";
 import PageHeader from "../../components/pageHeader/PageHeader";
 import "./styles.css"
 
+
+const MSG = 'Добрый день, Марина. Хочу записаться к вам на косультацию!'
 const ContactsPage = () => {
   return (
     <div className="contacts-bg">
@@ -18,20 +20,20 @@ const ContactsPage = () => {
             <li className="contacts-list__item--labled contacts-list__item">
               <div className="contacts-logo--wa contacts-logo"></div>
               <p className="absoluted subtitle">написать в watsapp</p>
-              <a className="contacts-link subtitle" href="#">
+              <a className="contacts-link subtitle" href={`https://wa.me/89619521246/?text=${MSG}`} target="_blank" rel='noreferrer'>
                 +7 961 952 12 46{" "}
               </a>
             </li>
             <li className="contacts-list__item">
               <div className="contacts-logo--mail contacts-logo"></div>
-              <a className="contacts-link subtitle" href="#">
+              <a className="contacts-link subtitle" href="mailto:marinamur78@rambler.ru" target="_blank" rel='noreferrer'>
                 marinamur78@rambler.ru
               </a>
             </li>
             <li className="contacts-list__item">
               <div className="contacts-logo--tg contacts-logo"></div>
-              <a className="contacts-link subtitle" href="#">
-                @marinaskirko
+              <a className="contacts-link subtitle" href="https://telegram.me/Marina_Skirko" target="_blank" rel='noreferrer'>
+                @Marina_Skirko
               </a>
             </li>
           </ul>

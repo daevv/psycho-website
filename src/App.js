@@ -10,16 +10,13 @@ import ConsultationPage from './pages/ConsultationPage';
 import BooksPage from './pages/BooksPage';
 import CardsPage from './pages/CardsPage';
 import ContactsPage from './pages/contactsPage/ContactsPage';
-import Modal from './components/modal/Modal';
-import { useState } from 'react';
+
 
 function App() {
 
-  // const [modalActive, setModalActive] = useState(true);
   return (
     <div className="App">
         <Header />
-        {/* <Modal isActive={modalActive} setIsActive={setModalActive}/> */}
         <Routes>
           <Route path="/" element={<MainPage/> } />
           <Route path="/about" element={<AboutPage />} />

@@ -1,6 +1,9 @@
-/* .header {
-  background-color: rgb(229, 231, 226);
-} */
+.header {
+  position: fixed;
+  background-color: rgb(255, 251, 240);
+  width: 100vw;
+  z-index: 1;
+}
 
 .header-container {
   padding: 0.75rem;
@@ -12,35 +15,11 @@
   align-items: center;
 }
 
-.nav-list {
-  display: flex;
-  column-gap: 2.5rem;
-  list-style: none;
-}
-
 .logo {
-  background-image: url("../../Assets/logo_Skirko--black.svg ");
+  background-image: url("../../Assets/logo/logo_Skirko--black.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
   height: 40px;
   width: 200px;
-}
-
-.nav-item {
-  text-transform: uppercase;
-  font-family: "Jost", Arial, sans-serif;
-  font-size: 12px;
-  color: black;
-  transition: 0.5s;
-  padding: 10px;
-}
-
-.nav-item:hover {
-  background-color: rgb(208, 201, 190);
-  border-radius: 15px;
-}
-
-.nav-item a {
-  color: #000;
 }

@@ -19,4 +19,13 @@
   background-color: beige;
   padding: 20px 5px;
   border-radius: 15%;
+  text-align: center;
+}
+
+@media (max-width: 720px) {
+  .services {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
 }

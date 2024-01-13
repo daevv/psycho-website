@@ -11,8 +11,8 @@
 
 .main-section__bg {
   background-color: #ffffff;
-  height: 700px;
-  width: 1000px;
+  height: 600px;
+  width: 60%;
   position: absolute;
   top: 0;
   left: 0;
@@ -24,6 +24,18 @@
   column-gap: 2rem;
 }
 
+.main-img--mobile {
+  background-image: url('../../Assets/photos/photo-4.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  width: 100%;
+  height: 400px;
+  display: none;
+  border-radius: 0 0 0 100px;
+  margin-bottom: 2rem;
+}
+
 .main-section__info {
   /* background-color:lavenderblush; */
   text-align: left;
@@ -32,4 +44,29 @@
   row-gap: 1.25rem;
   max-width: 600px;
   margin-top: 60px;
+}
+
+
+@media (max-width: 1000px) {
+  .main-section__bg {
+    width: 100%;
+    height: 1000px;
+  }
+  .main-img--mobile {
+    display: block;
+  }
+}
+@media (max-width: 480px) {
+  .content-container {
+    flex-direction: column;
+  }
+  .main-section__info {
+    row-gap: 0.5rem;
+  }
+  .content-box {
+    margin-bottom: 2rem;
+  }
+  .main-section__bg {
+    height: 950px;
+  }
 }

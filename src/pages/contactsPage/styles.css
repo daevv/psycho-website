@@ -42,12 +42,12 @@
 }
 
 .contacts-logo--mail {
-  background-image: url('../../Assets/mail-icon.svg');
+  background-image: url('../../Assets/socials-icons/mail-icon.svg');
 }
 
 .contacts-logo--wa {
-  background-image: url('../../Assets/wa-icon.svg');
+  background-image: url('../../Assets/socials-icons/wa-icon.svg');
 }
 .contacts-logo--tg {
-  background-image: url('../../Assets/tg-icon.svg');
+  background-image: url('../../Assets/socials-icons/tg-icon.svg');
 }

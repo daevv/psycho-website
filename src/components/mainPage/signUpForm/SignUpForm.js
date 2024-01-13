@@ -1,46 +1,71 @@
-import "./styles.css"
+import "./styles.css";
+import { useState, useRef } from "react";
+import ReactLoading from "react-loading";
+import generateSubmitHandler from "../../../api/formSubmit";
+
 const SignUpForm = () => {
-  const handleSubmit = () => {};
+  const [isLoading, setIsLoading] = useState(false);
+  const [isSuccess, setIsSuccess] = useState(false);
+
+  const formRef = useRef(null);
 
   return (
     <div className="form-container">
-      <form className='form' onSubmit={handleSubmit}>
+      <form
+        className="form"
+        ref={formRef}
+        onSubmit={generateSubmitHandler(setIsLoading, setIsSuccess, formRef)}
+        onChange={() => setIsSuccess(false)}
+      >
         <div>
-          <label className='label' htmlFor="name">Имя</label>
+          <label className="label" htmlFor="name">
+            Имя
+          </label>
           <input
-          className="input-field"
+            className="input-field"
             type="text"
             id="name"
-            // value={email}
-            // onChange={(e) => setEmail(e.target.value)}
             placeholder="Имя"
+            required
+            autocomplete="off"
           />
         </div>
         <div>
-          <label className='label' htmlFor="request">Опишите свой запрос в нескольких словах</label>
+          <label className="label" htmlFor="request">
+            Опишите свой запрос в нескольких словах
+          </label>
           <input
             className="input-field"
             type="text"
             id="request"
             placeholder="Опишите свой запрос в нескольких словах"
+            autocomplete="off"
           />
         </div>
         <div>
-          <label className='label' htmlFor="phone">Номер телефона</label>
+          <label className="label" htmlFor="phone">
+            Номер телефона
+          </label>
           <input
             className="input-field"
             type="phone"
             id="phone"
             placeholder="Номер телефона"
+            required
+            autocomplete="off"
           />
         </div>
         <div>
-          <label className='label' htmlFor="email">Email</label>
+          <label className="label" htmlFor="email">
+            Email
+          </label>
           <input
             className="input-field"
             type="email"
             id="email"
             placeholder="Email"
+            required
+            autocomplete="off"
           />
         </div>
         {/* <div>
@@ -57,6 +82,18 @@ const SignUpForm = () => {
           />
           Female
         </div> */}
+        {isSuccess && (
+          <p className="success-msg paragraph">Форма успешно отправлена!</p>
+        )}
+        {isLoading && (
+          <ReactLoading
+            className="loading-spinner"
+            type="spin"
+            color="darkgreen"
+            height={45}
+            width={45}
+          />
+        )}
         <button className="signup-button">Записаться</button>
       </form>
       <div className="main-img"></div>
