@@ -25,6 +25,7 @@ const SignUpForm = () => {
             className="input-field"
             type="text"
             id="name"
+            name="Name"
             placeholder="Имя"
             required
             autocomplete="off"
@@ -38,6 +39,7 @@ const SignUpForm = () => {
             className="input-field textarea"
             type="text"
             id="request"
+            name="Description"
             rows={3}
             placeholder="Опишите свой запрос в нескольких словах"
             autocomplete="off"
@@ -52,6 +54,7 @@ const SignUpForm = () => {
             type="phone"
             id="phone"
             placeholder="Номер телефона"
+            name="Phone"
             required
             autocomplete="off"
           />
@@ -66,6 +69,7 @@ const SignUpForm = () => {
             id="email"
             placeholder="Email"
             autocomplete="off"
+            name="Email"
           />
         </div>
         {/* <div>
