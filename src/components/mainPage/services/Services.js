@@ -6,31 +6,13 @@ import Modal from "../../modal/Modal";
 const SERVICES_LIST = [
   {
     serviceName: "Индивидуальная консультация",
-    price: 2500,
-    duration: "60 минут",
+    price: 3000,
+    duration: "90 минут",
     additionalInfo: "В офисе в центре города",
   },
   {
-    serviceName: "Индивидуальная консультация",
-    price: 2500,
-    duration: "60 минут",
-    additionalInfo: "В офисе в центре города",
-  },
-  {
-    serviceName: "Индивидуальная консультация",
-    price: 2500,
-    duration: "60 минут",
-    additionalInfo: "В офисе в центре города",
-  },
-  {
-    serviceName: "Индивидуальная консультация",
-    price: 2500,
-    duration: "60 минут",
-    additionalInfo: "В офисе в центре города",
-  },
-  {
-    serviceName: "Индивидуальная консультация",
-    price: 2500,
+    serviceName: "Пакет 5 консультаций",
+    price: 12000,
     duration: "60 минут",
     additionalInfo: "В офисе в центре города",
   },

@@ -3,10 +3,16 @@ import SignUpForm from "../../components/mainPage/signUpForm/SignUpForm";
 import PageHeader from "../../components/pageHeader/PageHeader";
 import "./styles.css";
 
+
+const PAGEHEADER_TEXT = `
+Практикующий психолог, работаю в модальностях: ценностно-ориентированная психология, коучинг, транс и регрессия. Ведущая регионального клубного движения Института Ценностно-Ориентированной Психологии, супервизор базового уровня Института Ценностно-Ориентированной Психологии. Преподаватель английского языка, поэтесса, автор трёх поэтических сборников и ресурсной колоды метафорических карт.
+  `;
+const PAGENAME = 'ОБО МНЕ';
+
 const AboutPage = () => {
   return (
     <div className="about-bg">
-      <PageHeader />
+      <PageHeader pageName={PAGENAME} text={PAGEHEADER_TEXT}/>
 
       <div className="personality-section">
         <div className="container">

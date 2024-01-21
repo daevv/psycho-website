@@ -2,12 +2,16 @@ import SignUpForm from "../../components/mainPage/signUpForm/SignUpForm";
 import PageHeader from "../../components/pageHeader/PageHeader";
 import "./styles.css"
 
+const PAGEHEADER_TEXT = `
+  Вы можете связаться со мной в любом удобном формате, чтобы подробнее узнать о моих подходах, записаться на консультацию, заказать книги или карты.   
+  `;
+const PAGENAME = 'контакты';
 
 const MSG = 'Добрый день, Марина. Хочу записаться к вам на косультацию!'
 const ContactsPage = () => {
   return (
     <div className="contacts-bg">
-      <PageHeader />
+      <PageHeader pageName={PAGENAME} text={PAGEHEADER_TEXT} type='contacts'/>
 
       <div className="contact-me-section">
         <div className="container">

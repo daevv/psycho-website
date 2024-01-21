@@ -5,15 +5,18 @@ import Cases from "../../components/mainPage/cases/Cases";
 import SignUpForm from "../../components/mainPage/signUpForm/SignUpForm";
 import PageHeader from "../../components/pageHeader/PageHeader";
 
-const REQUESTS_FIRST = ["Низкая самооценка", "ещё", "ещё", "ещё"];
-const REQUESTS_SECOND = ["Низкая самооценка", "ещё", "ещё", "ещё"];
+const PAGEHEADER_TEXT = `
+  Выпускница Института Ценностно-Ориентированной Психологии, ученица Олега Гадецкого. \n
+  Практикующий психолог, Ведущая регионального клубного движения Института ЦОП, супервизор базового уровня Института ЦОП.
+  `;
+const PAGENAME = 'ЛИЧНЫЙ ПСИХОЛОГ МАРИНА СКИРКО';
+const REQUESTS_FIRST = ["Низкая самооценка", "Работа со страхами", "Работа с обидами и гневом", "Трудности в переживании кризисных ситуаций"];
+const REQUESTS_SECOND = ["Психологические травмы", "Проблемы в межличностных отношениях", "Созавимые отношения", "Личностная самореализация и эффективность"];
 
 const MainPage = () => {
-
   return (
     <div className="main-bg">
-
-      <PageHeader />
+      <PageHeader text={PAGEHEADER_TEXT} pageName={PAGENAME} />
 
       <div className="requests-section">
         <div className="container">
@@ -35,7 +38,7 @@ const MainPage = () => {
         <div className="container">
           <h3 className="title">Услуги</h3>
           <p className="subtitle">
-            Я провожу личные консультации в онлайн формате (WhatsApp/Skype)
+            Я провожу личные консультации в онлайн формате (Zoom/Skype)
           </p>
           <Services />
         </div>
@@ -43,10 +46,9 @@ const MainPage = () => {
 
       <div className="results-section">
         <div className="container">
-          <h3 className="title">Кейсы</h3>
+          <h3 className="title">Отзывы</h3>
           <p className="subtitle">
-            Реальные истории моих клиентов, которые благодаря терапии смогли
-            изменить свою жизнь
+            Реальные истории моих клиентов, которым я смогла помочь
           </p>
           <Cases />
         </div>

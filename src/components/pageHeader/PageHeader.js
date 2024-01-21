@@ -3,7 +3,7 @@ import Modal from "../modal/Modal";
 import "./styles.css"
 import { useState } from "react";
 
-const PageHeader = () => {
+const PageHeader = ({text, pageName, type}) => {
   const [modalActive, setModalActive] = useState(false);
   const handleClick = () => setModalActive(!modalActive);
   return (
@@ -15,15 +15,13 @@ const PageHeader = () => {
           <div className="content-container__header content-container">
             <div className="main-section__info">
               <h2 className="name">личный психолог Марина Скирко</h2>
-              <h1 className="title">КОНСУЛЬТАЦИИ ПСИХОЛОГА ОНЛАЙН</h1>
+              <h1 className="title">{pageName}</h1>
               <div className="main-img--mobile"></div>
 
               <p className="paragraph">
-                Дипломированный психолог. Практика с 2015 года. Член Ассоциации
-                когнитивно-поведенческой психотерапии. Приглашенный эксперт
-                Psychologies Russia, LIFE, 1 канал, НТВ, MarieClaire.
+                {text}
               </p>
-              <SignUpButton handleClick={handleClick}/>
+              {((type && type !== 'contacts') || !type) && <SignUpButton handleClick={handleClick} type={type}/>}
             </div>
             <div className="main-img"></div>
           </div>
