@@ -13,5 +13,4 @@
 - CSS
 - HTML
 
-<img src='./src/Assets/app-demo.png' alt='app-pic'>
 
